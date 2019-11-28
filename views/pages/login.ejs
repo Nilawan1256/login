@@ -1,0 +1,25 @@
+<% layout('layout') %>
+<!doctype html>
+<html>
+    <?- include('../views/partials/head') -?>
+<body>
+<?- include('../partials/header') -?>
+ 
+<h1>Login Form</h1>
+
+<form action="/login" method="post">
+  <div class="container">
+    <img src="images/avatar1.jpg" alt="Avatar" class="avatar" width="100" height="100">
+  </div>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="user"  required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pass"  required>        
+    <button type="submit">Login</button>
+    <a href="/" class="btn btn-primary btn-lg active">Back</a>
+  </div>
+</form>
+ 
+</body>
+</html>
